@@ -18,7 +18,6 @@
 
         `python3 -m venv <virtual_environment_name>`
 
-
 3. Activate the virtual environment.
 
     4.1. On Windows
@@ -33,7 +32,11 @@
 
     `pip install -r requirements.txt`
 
-5. Start the server
+5. Migrate the models.
+
+    `python manage.py migrate`
+
+6. Start the server
 
     `python manage.py runserver`
 
@@ -42,6 +45,8 @@
 ## Notes
 
 1. For the purpose of the demo a library called 'djoser' has been used which provides readymade auth APIs.
+
+2. For the purpose of the demo a SQLite file has been used as a database.
 
 ---
 
